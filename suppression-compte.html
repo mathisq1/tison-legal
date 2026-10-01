@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tison — Suppression de compte</title>
+<style>
+  :root {
+    --brand-700: #013F51;
+    --action-secondary: #F0F4F7;
+    --action-light: #E6EEF1;
+    --text-primary: #2C3437;
+    --text-secondary: #596064;
+    --text-muted: #747C80;
+    --text-danger: #A83836;
+    --surface: #FFFFFF;
+    --surface-page: #F6F4F0;
+    --divider: #E7E7E5;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--surface-page);
+    color: var(--text-primary);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.55;
+  }
+
+  header {
+    background: var(--brand-700);
+    color: #FFFFFF;
+    padding: 32px 20px 28px;
+  }
+
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  header p {
+    margin: 0;
+    color: #E6EEF1;
+    font-size: 14px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+  }
+
+  section {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    margin-bottom: 24px;
+  }
+
+  section > h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--brand-700);
+  }
+
+  section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: var(--text-primary);
+  }
+
+  section p, section li {
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  section ul, section ol {
+    padding-left: 22px;
+    margin: 8px 0 16px;
+  }
+
+  section li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: var(--brand-700);
+    font-weight: 600;
+  }
+
+  .maj {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .callout {
+    background: var(--surface-page);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 16px 0;
+  }
+
+  .callout strong {
+    color: var(--text-danger);
+  }
+
+  .bouton {
+    display: inline-block;
+    min-height: 44px;
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    background: var(--brand-700);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .liens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .liens a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: var(--radius-full);
+    background: var(--action-secondary);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .liens a:hover {
+    background: var(--action-light);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 0 20px 40px;
+  }
+
+  @media (max-width: 480px) {
+    header h1 { font-size: 24px; }
+    section { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tison — Suppression de compte</h1>
+  <p>Comment supprimer votre compte et vos données</p>
+</header>
+
+<main>
+
+<section id="supprimer">
+  <h2>Comment supprimer votre compte</h2>
+  <p class="maj">Dernière mise à jour : 1er octobre 2026</p>
+
+  <h3>Depuis l'application (recommandé)</h3>
+  <ol>
+    <li>Ouvrez Tison et allez dans <strong>Mon compte › Supprimer mon compte</strong>.</li>
+    <li>Lisez le récapitulatif de ce qui sera supprimé et conservé.</li>
+    <li>Tapez « SUPPRIMER » pour confirmer.</li>
+  </ol>
+  <div class="callout">
+    <strong>La suppression est immédiate et définitive.</strong> Vous êtes déconnecté sur tous vos appareils
+    et il n'est pas possible de récupérer le compte ensuite.
+  </div>
+
+  <h3>Sans l'application</h3>
+  <p>Écrivez à <a href="mailto:contact.tison@proton.me?subject=Suppression%20de%20compte">contact.tison@proton.me</a>
+  <strong>depuis l'adresse email associée à votre compte</strong>, avec pour objet « Suppression de compte ».
+  Nous pouvons vous demander une confirmation pour vérifier que la demande vient bien de vous. Votre compte
+  est supprimé dans un délai maximal d'un mois, et nous vous confirmons la suppression par email.</p>
+  <p>Si vous n'avez plus accès à cette adresse email, écrivez-nous quand même en expliquant la situation :
+  nous vous demanderons des éléments permettant de vérifier que le compte vous appartient.</p>
+  <p><a class="bouton" href="mailto:contact.tison@proton.me?subject=Suppression%20de%20compte">Demander la suppression par email</a></p>
+</section>
+
+<section id="supprime">
+  <h2>Ce qui est supprimé</h2>
+  <ul>
+    <li>Votre compte : adresse email, mot de passe, nom affiché et photo de profil.</li>
+    <li>Vos photos et vos documents, y compris dans les voyages partagés.</li>
+    <li>Vos disponibilités, vos blocages et vos notifications.</li>
+    <li>Tout voyage dont vous êtes l'unique membre, avec tout son contenu (dépenses, votes, documents,
+    photos).</li>
+  </ul>
+</section>
+
+<section id="conserve">
+  <h2>Ce qui est conservé, et combien de temps</h2>
+  <ul>
+    <li><strong>Dans un voyage partagé</strong>, vos dépenses, remboursements, votes et propositions restent
+    visibles par les autres membres sous le nom « Membre supprimé », sans lien avec votre identité, pour que
+    les comptes du groupe restent justes. Ils sont conservés aussi longtemps que le voyage existe.</li>
+    <li><strong>Si vous organisiez un voyage partagé</strong>, l'organisation passe au membre le plus ancien
+    du voyage.</li>
+    <li><strong>Les signalements</strong> que vous avez faits ou dont vous avez fait l'objet sont conservés
+    6 mois après leur traitement, pour la sécurité du service.</li>
+    <li><strong>Les sauvegardes</strong> de notre hébergeur peuvent contenir vos données pendant une durée
+    limitée après la suppression, selon la politique de sauvegarde propre à Supabase.</li>
+    <li><strong>Les journaux techniques de connexion</strong> de notre hébergeur sont conservés selon la
+    politique de rétention propre à Supabase.</li>
+  </ul>
+</section>
+
+<section id="plus">
+  <h2>Plus d'informations</h2>
+  <div class="liens">
+    <a href="index.html#confidentialite">Politique de confidentialité</a>
+    <a href="index.html#cgu">Conditions d'utilisation</a>
+    <a href="mailto:contact.tison@proton.me">contact.tison@proton.me</a>
+  </div>
+</section>
+
+</main>
+
+<footer>Tison — Mathis Querne, micro-entrepreneur</footer>
+
+</body>
+</html>
