@@ -185,7 +185,7 @@
 
 <section id="confidentialite">
   <h2>Politique de confidentialité de Tison</h2>
-  <p class="maj">Dernière mise à jour : 31 octobre 2026</p>
+  <p class="maj">Dernière mise à jour : 13 novembre 2026</p>
   <p>Tison est une application qui aide un groupe d'amis à préparer et vivre un voyage ensemble : dépenses partagées, votes, dates, coffre de documents et galerie photo. Cette page explique quelles données Tison traite, pourquoi, avec qui, combien de temps, et comment les supprimer.</p>
 
   <h3>Qui est responsable de vos données</h3>
@@ -203,6 +203,7 @@
   <p><strong>Votre compte</strong></p>
   <ul>
     <li><strong>Adresse email et mot de passe</strong> : pour créer votre compte et vous connecter. Le mot de passe est stocké sous forme hachée, un procédé irréversible : personne, nous compris, ne peut le lire.</li>
+    <li><strong>Connexion avec Apple ou Google</strong> (facultative, à la place de l'email et du mot de passe) : Apple ou Google confirme votre identité à Tison et lui transmet votre <strong>adresse email</strong> (avec Apple, ce peut être une adresse relais si vous choisissez « Masquer mon adresse e-mail ») et un <strong>identifiant de compte</strong> propre à Tison. Votre <strong>prénom</strong> transmis par Apple ou Google devient votre nom affiché, modifiable dans Mon compte. Google transmet aussi votre nom complet et l'adresse de votre photo de profil Google : notre hébergeur les enregistre avec votre compte, mais Tison ne les affiche pas et ne les partage avec personne. Tison ne reçoit jamais votre mot de passe Apple ou Google.</li>
     <li><strong>Nom affiché</strong> : pour que les membres de vos voyages sachent qui a proposé, payé ou voté quoi.</li>
     <li><strong>Photo de profil</strong> (facultative) : visible uniquement par les membres de vos voyages.</li>
     <li><strong>Données techniques de connexion</strong> : notre hébergeur enregistre, pour la sécurité du service, l'adresse IP et le type d'appareil lors des connexions.</li>
@@ -244,11 +245,13 @@
     <li>vos crédits : voyage sur lequel un crédit a été utilisé.</li>
   </ul>
   <p>Le voyage sur lequel vous activez le Pass affiche à tous ses membres « Pass Voyage · offert par » suivi de votre prénom.</p>
+  <p><strong>Lien d'invitation</strong></p>
+  <p>Toute personne qui a le lien ou le code d'invitation d'un voyage voit, sans avoir de compte, sur la page du lien (tison.download), dans l'application et dans l'aperçu du lien affiché par les messageries : la <strong>photo de couverture</strong> du voyage, son <strong>nom</strong>, ses <strong>dates</strong>, le <strong>nombre de voyageurs</strong> et le <strong>prénom de l'organisateur</strong>. Aucun autre prénom, aucune photo de profil ni aucun autre contenu du voyage n'y apparaît. La page ne dépose aucun cookie et n'utilise aucun traceur.</p>
   <p><strong>Modération et sécurité</strong></p>
   <ul>
     <li><strong>Signalements</strong> : si vous signalez une photo ou un participant, nous enregistrons votre signalement (motif, commentaire facultatif, contenu visé) et l'équipe de modération en est avertie par email. Tant que votre signalement existe, la photo signalée est masquée pour vous.</li>
     <li><strong>Blocages</strong> : la liste des personnes que vous avez bloquées.</li>
-    <li><strong>Codes d'invitation</strong> : quand un code d'invitation invalide est saisi, nous enregistrons le compte et l'adresse IP concernés pour limiter les tentatives abusives.</li>
+    <li><strong>Codes d'invitation</strong> : quand un code d'invitation invalide est saisi ou ouvert (dans l'application ou sur la page du lien d'invitation), nous enregistrons le compte et l'adresse IP concernés pour limiter les tentatives abusives.</li>
   </ul>
   <p><strong>Notifications</strong></p>
   <p>Tison affiche des notifications dans l'application (nouvelle photo, dates validées…). Elles sont stockées avec leur état lu / non lu.</p>
@@ -269,6 +272,7 @@
     <li><strong>Nos prestataires techniques</strong>, qui traitent les données pour notre compte uniquement :
       <ul>
         <li><strong>Supabase</strong> (base de données, fichiers, authentification et emails de compte : confirmation d'inscription, réinitialisation du mot de passe), serveurs situés dans l'Union européenne (Irlande) ;</li>
+        <li><strong>Cloudflare</strong> (hébergement de la page du lien d'invitation, tison.download : reçoit l'adresse IP et le navigateur des visiteurs de la page, et lui transmet l'aperçu du voyage décrit dans « Lien d'invitation ») ;</li>
         <li><strong>RevenueCat</strong> (gestion des achats intégrés du Pass Voyage : identifiant technique du compte et historique d'achats, cf. « Achats ») ;</li>
         <li><strong>Resend</strong> (envoi de l'email de modération à chaque signalement : motif, commentaire et identifiants techniques du contenu visé ; et de l'email qui prévient avant la suppression d'un compte inactif : votre adresse email et votre nom affiché) ;</li>
         <li><strong>Expo</strong> (envoi des notifications push : jeton de l'appareil et texte de la notification, cf. « Notifications »), qui les remet à Apple ou Google pour affichage ;</li>
@@ -284,12 +288,12 @@
         <li><strong>les sites des annonces</strong> dont vous collez ou partagez le lien (Airbnb, Booking…), ouverts par votre téléphone pour en afficher l'aperçu.</li>
       </ul>
     </li>
-    <li><strong>Apple et Google</strong>, qui encaissent le paiement du Pass Voyage selon leurs propres conditions et politiques de confidentialité.</li>
+    <li><strong>Apple et Google</strong>, qui encaissent le paiement du Pass Voyage et, si vous les choisissez pour vous connecter, confirment votre identité, selon leurs propres conditions et politiques de confidentialité. Ils savent alors que vous utilisez Tison ; Tison ne leur transmet aucune donnée de vos voyages.</li>
     <li><strong>Les autorités</strong>, uniquement si la loi nous y oblige.</li>
   </ul>
   <p><strong>Transferts hors de l'Union européenne</strong></p>
   <p>Supabase héberge vos données dans l'Union européenne (Irlande). Mistral AI, qui lit le texte du remplissage automatique, est une société française qui traite ces données dans l'Union européenne.</p>
-  <p>Quelques prestataires sont des sociétés américaines : <strong>RevenueCat</strong> (achats du Pass Voyage), <strong>Expo</strong> (650 Industries, acheminement des notifications push), <strong>Resend</strong> (emails de modération et d'avertissement des comptes inactifs) et <strong>Google</strong> (statistiques de ML Kit sur Android). Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne prévues dans leurs contrats de traitement des données. Vous pouvez nous en demander une copie à <a href="mailto:contact.tison@proton.me">contact.tison@proton.me</a>.</p>
+  <p>Quelques prestataires sont des sociétés américaines : <strong>Cloudflare</strong> (page du lien d'invitation), <strong>RevenueCat</strong> (achats du Pass Voyage), <strong>Expo</strong> (650 Industries, acheminement des notifications push), <strong>Resend</strong> (emails de modération et d'avertissement des comptes inactifs) et <strong>Google</strong> (statistiques de ML Kit sur Android). Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne prévues dans leurs contrats de traitement des données. Vous pouvez nous en demander une copie à <a href="mailto:contact.tison@proton.me">contact.tison@proton.me</a>.</p>
 
   <h3>Combien de temps nous les gardons</h3>
   <ul>
@@ -310,7 +314,8 @@
   <h3>Supprimer votre compte</h3>
   <p>Dans l'application : <strong>Mon compte › Supprimer mon compte</strong>. La suppression est immédiate et définitive :</p>
   <ul>
-    <li>votre compte, votre adresse email, votre profil et votre photo de profil sont supprimés ;</li>
+    <li>votre compte, votre adresse email, votre profil et votre photo de profil sont supprimés, ainsi que les informations reçues d'Apple ou de Google si vous vous connectiez avec eux ;</li>
+    <li>si vous vous connectiez avec Apple, Tison vous demande une dernière confirmation Apple et révoque son accès : Tison disparaît de la liste des apps utilisant votre identifiant Apple. Avec Google, vous pouvez retirer l'accès de Tison dans les réglages de votre compte Google (Sécurité › Vos connexions à des applications tierces) ;</li>
     <li>un voyage dont vous êtes le seul membre est supprimé avec tout son contenu ;</li>
     <li>dans un voyage partagé, vous apparaissez désormais comme « Membre supprimé ». Vos dépenses et remboursements sont conservés sous ce nom, pour que les comptes du groupe restent justes. Vos votes et propositions sont conservés de la même façon. Vos photos de la galerie et vos documents du coffre sont supprimés. Les photos d'un logement que vous avez proposé et la photo de couverture d'un voyage restent, car elles appartiennent au voyage du groupe, sans lien avec votre identité ;</li>
     <li>si vous aviez créé un voyage partagé, l'organisation passe au membre le plus ancien ;</li>
@@ -334,7 +339,7 @@
 
 <section id="cgu">
   <h2>Conditions d'utilisation de Tison</h2>
-  <p class="maj">Dernière mise à jour : 31 octobre 2026</p>
+  <p class="maj">Dernière mise à jour : 13 novembre 2026</p>
 
   <p>En créant un compte sur Tison, vous acceptez les conditions ci-dessous ainsi que la
   <a href="#confidentialite">politique de confidentialité</a>.</p>
@@ -355,8 +360,9 @@
   <h3>3. Compte</h3>
   <ul>
     <li>Vous devez avoir 16 ans ou plus pour créer un compte.</li>
-    <li>Un compte est personnel : vous êtes responsable de la confidentialité de votre mot de passe et de
-    ce qui est fait depuis votre compte. Prévenez-nous sans attendre si vous pensez que votre compte a été
+    <li>Vous pouvez créer votre compte avec votre email et un mot de passe, ou avec Apple ou Google.</li>
+    <li>Un compte est personnel : vous êtes responsable de la confidentialité de votre mot de passe (ou de
+    l'accès à votre compte Apple ou Google) et de ce qui est fait depuis votre compte. Prévenez-nous sans attendre si vous pensez que votre compte a été
     utilisé par quelqu'un d'autre.</li>
     <li>Les informations que vous fournissez (email, nom affiché) doivent être exactes. Le nom affiché ne
     doit pas usurper l'identité d'une autre personne.</li>
@@ -367,6 +373,8 @@
     <li>Un voyage n'est visible que par ses membres, c'est-à-dire les personnes qui l'ont rejoint grâce à
     un code ou un lien d'invitation. Toute personne à qui vous transmettez un code peut rejoindre le
     voyage : ne le partagez qu'avec les personnes concernées.</li>
+    <li>Le lien d'invitation montre à qui l'ouvre, même sans compte, la photo de couverture, le nom, les
+    dates et le nombre de voyageurs du voyage, ainsi que le prénom de l'organisateur.</li>
     <li>L'organisateur d'un voyage peut figer les dates. Si l'organisateur supprime son compte,
     l'organisation passe au membre le plus ancien.</li>
     <li>Un voyage terminé reste consultable en lecture seule par ses membres, pendant la durée indiquée
@@ -505,7 +513,8 @@
 
   <h3>Ce qui est supprimé</h3>
   <ul>
-    <li>Votre compte : adresse email, mot de passe, nom affiché et photo de profil.</li>
+    <li>Votre compte : adresse email, mot de passe, nom affiché et photo de profil, ainsi que les informations reçues d'Apple ou de Google si vous vous connectiez avec eux.</li>
+    <li>L'accès de Tison à votre identifiant Apple, si vous vous connectiez avec Apple : il est révoqué après une dernière confirmation Apple. Pour un compte Google, vous pouvez retirer l'accès de Tison dans les réglages de votre compte Google.</li>
     <li>Vos photos de la galerie et vos documents du coffre, y compris dans les voyages partagés.</li>
     <li>Vos disponibilités, vos blocages, vos notifications et vos réglages.</li>
     <li>Sur votre téléphone : les données de vos voyages gardées pour l'affichage hors connexion.</li>
