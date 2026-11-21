@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tison — Account deletion</title>
+<link rel="alternate" hreflang="fr" href="../suppression-compte.html" />
+<style>
+  :root {
+    --brand-700: #013F51;
+    --action-secondary: #F0F4F7;
+    --action-light: #E6EEF1;
+    --text-primary: #2C3437;
+    --text-secondary: #596064;
+    --text-muted: #747C80;
+    --text-danger: #A83836;
+    --surface: #FFFFFF;
+    --surface-page: #F6F4F0;
+    --divider: #E7E7E5;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--surface-page);
+    color: var(--text-primary);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.55;
+  }
+
+  header {
+    background: var(--brand-700);
+    color: #FFFFFF;
+    padding: 32px 20px 28px;
+  }
+
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  header p {
+    margin: 0;
+    color: #E6EEF1;
+    font-size: 14px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+  }
+
+  section {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    margin-bottom: 24px;
+  }
+
+  section > h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--brand-700);
+  }
+
+  section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: var(--text-primary);
+  }
+
+  section p, section li {
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  section ul, section ol {
+    padding-left: 22px;
+    margin: 8px 0 16px;
+  }
+
+  section li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: var(--brand-700);
+    font-weight: 600;
+  }
+
+  .maj {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .callout {
+    background: var(--surface-page);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 16px 0;
+  }
+
+  .callout strong {
+    color: var(--text-danger);
+  }
+
+  .bouton {
+    display: inline-block;
+    min-height: 44px;
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    background: var(--brand-700);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .liens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .liens a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: var(--radius-full);
+    background: var(--action-secondary);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .liens a:hover {
+    background: var(--action-light);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 0 20px 40px;
+  }
+
+  @media (max-width: 480px) {
+    header h1 { font-size: 24px; }
+    section { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tison — Account deletion</h1>
+  <p>How to delete your account and your data · <a href="../suppression-compte.html" lang="fr" hreflang="fr" style="color:#E6EEF1">Français</a></p>
+</header>
+
+<main>
+
+<section id="supprimer">
+  <h2>How to delete your account</h2>
+  <p class="maj">Last updated: November 13, 2026 · English translation, the <a href="../suppression-compte.html" hreflang="fr">French version</a> prevails</p>
+
+  <h3>From the app (recommended)</h3>
+  <ol>
+    <li>Open Tison and go to <strong>My account › Delete my account</strong>.</li>
+    <li>Read the summary of what will be deleted and kept.</li>
+    <li>Type "DELETE" to confirm.</li>
+  </ol>
+  <div class="callout">
+    <strong>Deletion is immediate and permanent.</strong> You are signed out on all your devices
+    and the account cannot be recovered afterwards.
+  </div>
+
+  <h3>Without the app</h3>
+  <p>Write to <a href="mailto:contact.tison@proton.me?subject=Account%20deletion">contact.tison@proton.me</a>
+  <strong>from the email address linked to your account</strong>, with the subject "Account deletion".
+  We may ask you for confirmation to check that the request really comes from you. Your account
+  is deleted within one month at most, and we confirm the deletion by email.</p>
+  <p>If you no longer have access to that email address, write to us anyway explaining the situation:
+  we will ask you for information to check that the account belongs to you.</p>
+  <p><a class="bouton" href="mailto:contact.tison@proton.me?subject=Account%20deletion">Request deletion by email</a></p>
+</section>
+
+<section id="inactif">
+  <h2>Unused account</h2>
+  <p>An account unused for 2 years (no signed-in opening of the app) is deleted
+  automatically, in the same way. An email warns 30 days before: just sign in to
+  keep the account.</p>
+</section>
+
+<section id="supprime">
+  <h2>What is deleted</h2>
+  <ul>
+    <li>Your account: email address, password, display name and profile photo, as well as the information received from Apple or Google if you signed in with them.</li>
+    <li>Tison's access to your Apple ID, if you signed in with Apple: it is revoked after a final Apple confirmation. For a Google account, you can remove Tison's access in your Google account settings.</li>
+    <li>Your gallery photos and vault documents, including in shared trips.</li>
+    <li>Your availability, your blocks, your notifications and your settings.</li>
+    <li>On your phone: your trip data kept for offline display.</li>
+    <li>Any trip of which you are the only member, with all its content (expenses, votes, documents,
+    photos).</li>
+  </ul>
+</section>
+
+<section id="conserve">
+  <h2>What is kept, and for how long</h2>
+  <ul>
+    <li><strong>In a shared trip</strong>, your expenses, repayments, votes and suggestions remain
+    visible to the other members under the name "Deleted member", with no link to your identity, so
+    the group's accounts remain correct. They are kept as long as the trip exists.</li>
+    <li><strong>The photos of a stay you suggested and the cover photo of a shared
+    trip</strong> remain in the trip, with no link to your identity: they belong to the group's
+    trip.</li>
+    <li><strong>If you organized a shared trip</strong>, the organizer role passes to the trip's
+    longest-standing member.</li>
+    <li><strong>Your Trip Pass purchases</strong>: proof of sale is kept for 10 years
+    (accounting obligation), with no link to your account. Your unused credits are lost.</li>
+    <li><strong>Reports</strong> you made or that concerned you are kept for
+    6 months after they are handled, for the security of the service, then deleted automatically.</li>
+    <li><strong>Our host's backups</strong> may contain your data for a limited
+    time after deletion, according to Supabase's own backup policy.</li>
+    <li><strong>The sign-in log</strong> (email address, IP address, sign-in dates) is
+    kept for 6 months, then deleted automatically.</li>
+  </ul>
+</section>
+
+<section id="plus">
+  <h2>More information</h2>
+  <div class="liens">
+    <a href="index.html#confidentialite">Privacy policy</a>
+    <a href="index.html#cgu">Terms of use</a>
+    <a href="mailto:contact.tison@proton.me">contact.tison@proton.me</a>
+  </div>
+</section>
+
+</main>
+
+<footer>Tison — Mathis Querne, sole trader</footer>
+
+</body>
+</html>
